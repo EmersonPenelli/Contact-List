@@ -1,5 +1,11 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import Tarefa from '../../models/Tarefa'
+
+type Tarefa = {
+  id: number
+  nomeContato: string
+  emailContato: string
+  phoneContato: string
+}
 
 type AtividadeState = {
   itens: Tarefa[]
